@@ -25,14 +25,40 @@
 
 // console.log(typeof null);
 
-let age = 30;
-age = 31;
+// let age = 30;
+// age = 31;
 
-// const birthYear = 1991;
-// birthYear = 1990;
+// // const birthYear = 1991;
+// // birthYear = 1990;
 
-var job = "programmer";
-job = "teacher";
+// var job = "programmer";
+// job = "teacher";
 
+// const lastName = "Arakaki";
+// console.log(lastName);
+
+const now = 2037;
+const ageFelipe = now - 1988;
+const ageSarah = now - 2018;
+console.log(ageFelipe, ageSarah);
+
+
+console.log(ageFelipe * 2, ageFelipe / 10, 2**3);
+
+const firstName = "Felipe";
 const lastName = "Arakaki";
-console.log(lastName);
+console.log(`${firstName} ${lastName}`);
+
+let x = 10 + 5;
+x += 10;
+x += 4;
+x++;
+x--;
+console.log(x);
+
+console.log(ageFelipe > ageSarah);
+console.log(ageSarah >= 18);
+
+const isFullAge = ageSarah >= 18;
+
+console.log(now - 1991 > now - 2018);
