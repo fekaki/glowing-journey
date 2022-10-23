@@ -79,28 +79,28 @@
 // and height in meter).
 // Your tasks:
 
-const massMark = 95;
-const heightMark = 1.88;
-console.log(massMark, heightMark)
+// const massMark = 95;
+// const heightMark = 1.88;
+// console.log(massMark, heightMark)
 
-const massJohn = 85;
-const heigthJohn = 1.76;
-console.log(massJohn, heigthJohn);
+// const massJohn = 85;
+// const heigthJohn = 1.76;
+// console.log(massJohn, heigthJohn);
 
 
 // 1. Store Mark's and John's mass and height in variables
 // 2. Calculate both their BMIs using the formula (you can even implement both
 // versions)
-const bmiMark = massMark / heightMark ** 2;
-console.log(bmiMark);
+// const bmiMark = massMark / heightMark ** 2;
+// console.log(bmiMark);
 
-const bmiJonh = massJohn / heigthJohn ** 2;
-console.log(bmiJonh);
+// const bmiJonh = massJohn / heigthJohn ** 2;
+// console.log(bmiJonh);
 
 // 3. Create a Boolean variable 'markHigherBMI' containing information about
 // whether Mark has a higher BMI than John.
-const markHigherBMI = bmiMark > bmiJonh
-console.log(markHigherBMI);
+// const markHigherBMI = bmiMark > bmiJonh
+// console.log(markHigherBMI);
 
 
 // Test data:
@@ -110,3 +110,27 @@ console.log(markHigherBMI);
 // § Data 2: Marks weights 95 kg and is 1.88 m tall. John weights 85 kg and is 1.76
 // m tall.
 // GOOD LUCK 😀
+
+//////////////////////////////////////////////
+
+*/
+const firstName = "Jonas";
+const job = "teacher";
+const birthYear = 1991;
+const year = 2037;
+
+const jonas = "I'm " + firstName + ", a " + (year - birthYear) + " years old " + job + "!";
+console.log(jonas);
+
+const jonasNew = `I'm ${firstName}, a ${year - birthYear} year old ${job}!`
+console.log(jonasNew);
+
+console.log(`String
+multiple
+lines
+`);
+
+console.log("String \n\
+multiple \n\
+lines");
+*/
