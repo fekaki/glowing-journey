@@ -37,9 +37,9 @@
 // const lastName = "Arakaki";
 // console.log(lastName);
 
-const now = 2037;
-const ageFelipe = now - 1988;
-const ageSarah = now - 2018;
+// const now = 2037;
+// const ageFelipe = now - 1988;
+// const ageSarah = now - 2018;
 // console.log(ageFelipe, ageSarah);
 
 
@@ -67,5 +67,46 @@ const ageSarah = now - 2018;
 // x=y= 25 - 10 - 5;
 // console.log(x, y)
 
-const averageAge = (ageFelipe + ageSarah) / 2;
-console.log(ageFelipe, ageSarah, averageAge);
+// const averageAge = (ageFelipe + ageSarah) / 2;
+// console.log(ageFelipe, ageSarah, averageAge);
+
+///////////////////////////////////////////////////////////////
+
+// Coding Challenge #1
+// Mark and John are trying to compare their BMI (Body Mass Index), which is
+// calculated using the formula:
+// BMI = mass / height ** 2 = mass / (height * height) (mass in kg
+// and height in meter).
+// Your tasks:
+
+const massMark = 95;
+const heightMark = 1.88;
+console.log(massMark, heightMark)
+
+const massJohn = 85;
+const heigthJohn = 1.76;
+console.log(massJohn, heigthJohn);
+
+
+// 1. Store Mark's and John's mass and height in variables
+// 2. Calculate both their BMIs using the formula (you can even implement both
+// versions)
+const bmiMark = massMark / heightMark ** 2;
+console.log(bmiMark);
+
+const bmiJonh = massJohn / heigthJohn ** 2;
+console.log(bmiJonh);
+
+// 3. Create a Boolean variable 'markHigherBMI' containing information about
+// whether Mark has a higher BMI than John.
+const markHigherBMI = bmiMark > bmiJonh
+console.log(markHigherBMI);
+
+
+// Test data:
+// § Data 1: Marks weights 78 kg and is 1.69 m tall. John weights 92 kg and is 1.95
+// m tall.
+
+// § Data 2: Marks weights 95 kg and is 1.88 m tall. John weights 85 kg and is 1.76
+// m tall.
+// GOOD LUCK 😀
