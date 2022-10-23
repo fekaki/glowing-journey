@@ -40,25 +40,32 @@
 const now = 2037;
 const ageFelipe = now - 1988;
 const ageSarah = now - 2018;
-console.log(ageFelipe, ageSarah);
+// console.log(ageFelipe, ageSarah);
 
 
-console.log(ageFelipe * 2, ageFelipe / 10, 2**3);
+// console.log(ageFelipe * 2, ageFelipe / 10, 2**3);
 
-const firstName = "Felipe";
-const lastName = "Arakaki";
-console.log(`${firstName} ${lastName}`);
+// const firstName = "Felipe";
+// const lastName = "Arakaki";
+// console.log(`${firstName} ${lastName}`);
 
-let x = 10 + 5;
-x += 10;
-x += 4;
-x++;
-x--;
-console.log(x);
+// let x = 10 + 5;
+// x += 10;
+// x += 4;
+// x++;
+// x--;
+// console.log(x);
 
-console.log(ageFelipe > ageSarah);
-console.log(ageSarah >= 18);
+// console.log(ageFelipe > ageSarah);
+// console.log(ageSarah >= 18);
 
-const isFullAge = ageSarah >= 18;
+// const isFullAge = ageSarah >= 18;
 
-console.log(now - 1991 > now - 2018);
+// console.log(now - 1991 > now - 2018);
+
+// let x, y;
+// x=y= 25 - 10 - 5;
+// console.log(x, y)
+
+const averageAge = (ageFelipe + ageSarah) / 2;
+console.log(ageFelipe, ageSarah, averageAge);
