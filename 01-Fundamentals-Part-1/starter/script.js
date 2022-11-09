@@ -269,14 +269,14 @@ if(markHigherBMI = bmiMark > bmiJonh){
 
 // if (favourite !== 23) console.log("Why not 23?");
 
-const hasDriversLicense = true; // A
-const hasGoodVision = true; // B
+// const hasDriversLicense = true; // A
+// const hasGoodVision = true; // B
 
-console.log(hasDriversLicense && hasGoodVision);
-console.log(hasDriversLicense || hasGoodVision);
-console.log(!hasDriversLicense);
+// console.log(hasDriversLicense && hasGoodVision);
+// console.log(hasDriversLicense || hasGoodVision);
+// console.log(!hasDriversLicense);
 
-const shouldDrive = hasDriversLicense && hasGoodVision
+// const shouldDrive = hasDriversLicense && hasGoodVision
 
 // if(hasDriversLicense && hasGoodVision) {
 //   console.log("Sarah is able to drive!");
@@ -284,11 +284,86 @@ const shouldDrive = hasDriversLicense && hasGoodVision
 //   console.log("Someone else should drive...");
 // }
 
-const isTired = false; // C
-console.log(hasDriversLicense && hasGoodVision && isTired);
+// const isTired = false; // C
+// console.log(hasDriversLicense && hasGoodVision && isTired);
 
-if(hasDriversLicense && hasGoodVision && !isTired) {
-    console.log("Sarah is able to drive!");
-  } else {
-    console.log("Someone else should drive...");
-  }
+// if(hasDriversLicense && hasGoodVision && !isTired) {
+//     console.log("Sarah is able to drive!");
+//   } else {
+//     console.log("Someone else should drive...");
+//   }
+
+/*
+  1. Calculate the average score for each team, using the test data below
+    averageDolphins = (96 + 108 + 89) / 3
+    averageKoalas = (96 + 108 + 89) / 3
+
+  2. Compare the team's average scores to determine the winner of the competition, and print it to the console. Don't forget that there can be a draw, so test for that as well (draw means they have the same average score).
+
+  3. BONUS 1: Include a requirement for a minimum score of 100. With this rule, a team only wins if it has a higher score than other team. HINT: Use a logical operator to test for minimum score, as well as multiple else-if blocks
+  4. BONUS 2: Minimum score also applies to a draw! So a draw only happens when both teams have the same score and both have a score greater or equal 100 points. Otherwise, no team wins the trophy
+
+  TEST DATA: Dolphins score 96, 108 and 89. Koalas score 88, 91 and 110.
+  TEST DATA BONUS: 1: Dolphins score 97, 112 and 101. Koalas score 109,95 and 123
+  TEST DATA BONUS 2: Dolphins score 97, 112 and 101. Koalas score 109, 95 and 106
+*/
+
+// const scoreDolphin1 = 96;
+// const scoreDolphin2 = 108;
+// const scoreDolphin3 = 89;
+
+// const scoreKoala1 = 88;
+// const scoreKoala2 = 91;
+// const scoreKoala3 = 110;
+
+// const sumScoreDolphin = scoreDolphin1 + scoreDolphin2 + scoreDolphin3
+// console.log(`The sum of Dolphins score is ${sumScoreDolphin}!`);
+
+// const averageDolphins = sumScoreDolphin / 3;
+// console.log(`The average of Dolphins score is ${averageDolphins.toFixed(2)}!`);
+
+// const sumScoreKoala = scoreKoala1 + scoreKoala2 + scoreKoala3
+// console.log(`The sum of Koalas score is ${sumScoreKoala}!`);
+
+// const averageKoalas = sumScoreKoala / 3;
+// console.log(`The average of Koalas score is ${averageKoalas.toFixed(2)}!`);
+
+// if(averageDolphins > averageKoalas) {
+//   console.log('The winner of the competition is Dolphins!');
+// } else if(averageDolphins < averageKoalas) {
+//   console.log('The winner of the competition is Koalas!');
+// } else{
+//   console.log('The competitions against Dolphin and Koala is DRAW!');
+// };
+
+// bonus 1
+
+const scoreDolphin1 = 97;
+const scoreDolphin2 = 112;
+const scoreDolphin3 = 80;
+
+const scoreKoala1 = 109;
+const scoreKoala2 = 95;
+const scoreKoala3 = 50;
+
+const sumScoreDolphin = scoreDolphin1 + scoreDolphin2 + scoreDolphin3
+console.log(`The sum of Dolphins score is ${sumScoreDolphin}!`);
+
+const averageDolphins = sumScoreDolphin / 3;
+console.log(`The average of Dolphins score is ${averageDolphins.toFixed(2)}!`);
+
+const sumScoreKoala = scoreKoala1 + scoreKoala2 + scoreKoala3
+console.log(`The sum of Koalas score is ${sumScoreKoala}!`);
+
+const averageKoalas = sumScoreKoala / 3;
+console.log(`The average of Koalas score is ${averageKoalas.toFixed(2)}!`);
+
+if(averageDolphins > averageKoalas && sumScoreDolphin >= 100) {
+  console.log('The winner of the competition is Dolphins!');
+} else if(averageDolphins < averageKoalas && sumScoreKoala >= 100) {
+  console.log('The winner of the competition is Koalas!');
+} else if (sumScoreDolphin === sumScoreKoala && averageDolphins >= 100 && averageKoalas >= 100) {
+  console.log('The competitions against Dolphin and Koala is DRAW!');
+} else {
+  console.log('No one wins the trophy!');
+};
