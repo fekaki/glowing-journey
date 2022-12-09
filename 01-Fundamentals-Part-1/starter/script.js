@@ -338,32 +338,71 @@ if(markHigherBMI = bmiMark > bmiJonh){
 
 // bonus 1
 
-const scoreDolphin1 = 97;
-const scoreDolphin2 = 112;
-const scoreDolphin3 = 80;
+// const scoreDolphin1 = 97;
+// const scoreDolphin2 = 112;
+// const scoreDolphin3 = 80;
 
-const scoreKoala1 = 109;
-const scoreKoala2 = 95;
-const scoreKoala3 = 50;
+// const scoreKoala1 = 109;
+// const scoreKoala2 = 95;
+// const scoreKoala3 = 50;
 
-const sumScoreDolphin = scoreDolphin1 + scoreDolphin2 + scoreDolphin3
-console.log(`The sum of Dolphins score is ${sumScoreDolphin}!`);
+// const sumScoreDolphin = scoreDolphin1 + scoreDolphin2 + scoreDolphin3
+// console.log(`The sum of Dolphins score is ${sumScoreDolphin}!`);
 
-const averageDolphins = sumScoreDolphin / 3;
-console.log(`The average of Dolphins score is ${averageDolphins.toFixed(2)}!`);
+// const averageDolphins = sumScoreDolphin / 3;
+// console.log(`The average of Dolphins score is ${averageDolphins.toFixed(2)}!`);
 
-const sumScoreKoala = scoreKoala1 + scoreKoala2 + scoreKoala3
-console.log(`The sum of Koalas score is ${sumScoreKoala}!`);
+// const sumScoreKoala = scoreKoala1 + scoreKoala2 + scoreKoala3
+// console.log(`The sum of Koalas score is ${sumScoreKoala}!`);
 
-const averageKoalas = sumScoreKoala / 3;
-console.log(`The average of Koalas score is ${averageKoalas.toFixed(2)}!`);
+// const averageKoalas = sumScoreKoala / 3;
+// console.log(`The average of Koalas score is ${averageKoalas.toFixed(2)}!`);
 
-if(averageDolphins > averageKoalas && sumScoreDolphin >= 100) {
-  console.log('The winner of the competition is Dolphins!');
-} else if(averageDolphins < averageKoalas && sumScoreKoala >= 100) {
-  console.log('The winner of the competition is Koalas!');
-} else if (sumScoreDolphin === sumScoreKoala && averageDolphins >= 100 && averageKoalas >= 100) {
-  console.log('The competitions against Dolphin and Koala is DRAW!');
+// if(averageDolphins > averageKoalas && sumScoreDolphin >= 100) {
+//   console.log('The winner of the competition is Dolphins!');
+// } else if(averageDolphins < averageKoalas && sumScoreKoala >= 100) {
+//   console.log('The winner of the competition is Koalas!');
+// } else if (sumScoreDolphin === sumScoreKoala && averageDolphins >= 100 && averageKoalas >= 100) {
+//   console.log('The competitions against Dolphin and Koala is DRAW!');
+// } else {
+//   console.log('No one wins the trophy!');
+// };
+
+const day = 'wednesay';
+switch (day) {
+  case 'monday':
+    console.log('Plan course structure');
+    console.log('Go to coding meetup');
+    break;
+  case 'tuesday':
+    console.log('Prepare theory videos');
+    break;
+  case 'wednesday':
+  case 'thursday':
+    console.log('Write code examples');
+    break;
+  case 'friday':
+    console.log('Record videos');
+    break;
+  case 'saturday':
+  case 'sunday':
+    console.log('Enjoy the weekend :D');
+    break;
+  default:
+    console.log('Not a valid day!')
+}
+
+if (day === 'monday'){
+  console.log('Plan course structure');
+  console.log('Go to coding meetup');
+} else if (day === 'tuesday') {
+  console.log('Prepare theory videos');
+} else if (day === 'wednesday' || day === "thursday") {
+  console.log('Write code examples');
+} else if (day === 'friday') {
+  console.log('Record videos');
+} else if (day === 'saturday || day '=== 'sunday') {
+  console.log('Enjoy the weekend :D');
 } else {
-  console.log('No one wins the trophy!');
-};
+  console.log('Not a valid day!')
+}
