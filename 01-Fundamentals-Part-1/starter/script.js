@@ -410,13 +410,53 @@ if(markHigherBMI = bmiMark > bmiJonh){
 //////////////////////////////////////////
 
 
-3 + 4
-1991
-true && false && !false
+// 3 + 4
+// 1991
+// true && false && !false
 
-if (23 > 10) {
-  const str = '23 is bigger';
-}
+// if (23 > 10) {
+//   const str = '23 is bigger';
+// }
 
-const me = 'Jonas';
-console.log(`I'm ${2037 - 1991} years old ${me}`)
+// const me = 'Jonas';
+// console.log(`I'm ${2037 - 1991} years old ${me}`)
+
+///////////////////////////////////////////////////////
+
+// const age = 18;
+// // age >= 18 console.log('I like to drink wine 🍷') : console.log('I like to drink water 🥛');
+// const drink = age >= 18 ? 'wine 🍷' : 'water 🥛';
+// console.log(drink);
+
+// let drink2;
+// if (age>= 18){
+//   drink2 = 'wine 🍷';
+// } else {
+//   drink2 = 'water 🥛';
+// }
+// console.log(drink2);
+
+// console.log(`I like to drink ${age >= 18 ? 'wine 🍷' : 'water 🥛'}`);
+
+
+// Coding chellenge #4
+
+/*
+Steven wants to build a very simple tip calculator for whenever he goes eating in a restaurant. In his country, it's usual to tip 15% if the bill value is between 50 and 300. If the value is different, the tip is 20%
+
+1. Your task is to calculate the tip, depending on the bill value. Create a variable called 'tip' for this. It's not allowed to use an if/else statements (If it's easier for you, you can start with an if/else statements, and then try to convert it to a ternary operator!)
+2. Print a string to the console containing the bill value, the tip, and the final value (bill + tip). example: 'The bill was
+, the tip was 41.25, and the total value 316.25
+
+TEST DATA: Test for bill values 275, 40 and 430
+*/
+
+const bill = 430;
+
+const tip1 = bill*(15/100);
+console.log(tip1);
+const tip2 = bill*(20/100);
+console.log(tip2);
+
+const total = bill >= 50 && bill <= 300  ? (bill + tip1) : (bill + tip2);
+console.log(total);
