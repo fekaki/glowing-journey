@@ -274,13 +274,23 @@ HINT Remember that an array needs a value in each position, and that value can a
 
 ////////////////////////////////////////////////////////////////
 
-const felipeArray = [
-  "Felipe",
-  "Arakaki",
-  2037 - 1988,
-  "student",
-  ["Michael", "Peter", "Steven"],
-];
+// const felipeArray = [
+//   "Felipe",
+//   "Arakaki",
+//   2037 - 1988,
+//   "student",
+//   ["Michael", "Peter", "Steven"],
+// ];
+
+// const felipe = {
+//   firstName: "Felipe",
+//   lastName: "Arakaki",
+//   age: 2037 - 1988,
+//   job: "student",
+//   friends: ["Michael", "Peter", "Steven"],
+// };
+
+// console.log(felipeArray);
 
 const felipe = {
   firstName: "Felipe",
@@ -290,4 +300,33 @@ const felipe = {
   friends: ["Michael", "Peter", "Steven"],
 };
 
-console.log(felipeArray);
+console.log(felipe);
+
+console.log(felipe.lastName);
+console.log(felipe["lastName"]);
+
+const nameKey = "Name";
+console.log(felipe["first" + nameKey]);
+console.log(felipe["last" + nameKey]);
+
+const interestedIn =
+  "What do you want to know about Felipe? Choose between firstName, lastName, age, job, and friends";
+
+if (felipe[interestedIn]) {
+  console.log(felipe[interestedIn]);
+} else {
+  console.log(
+    "Wrong request! What do you want to know about Felipe? Choose between firstName, lastName, age, job, and friends"
+  );
+}
+
+felipe.location = "Brazil";
+felipe["twiter"] = "@felipearakaki";
+console.log(felipe);
+
+// CHallenge
+// Felipe has 3 friends, and his best friend is called Michael!
+
+console.log(
+  `${felipe.firstName} has ${felipe.friends.length} friends, and his best friend is called ${felipe.friends[0]}!`
+);
