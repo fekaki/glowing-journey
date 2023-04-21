@@ -292,41 +292,73 @@ HINT Remember that an array needs a value in each position, and that value can a
 
 // console.log(felipeArray);
 
+// const felipe = {
+//   firstName: "Felipe",
+//   lastName: "Arakaki",
+//   age: 2037 - 1988,
+//   job: "student",
+//   friends: ["Michael", "Peter", "Steven"],
+// };
+
+// console.log(felipe);
+
+// console.log(felipe.lastName);
+// console.log(felipe["lastName"]);
+
+// const nameKey = "Name";
+// console.log(felipe["first" + nameKey]);
+// console.log(felipe["last" + nameKey]);
+
+// const interestedIn =
+//   "What do you want to know about Felipe? Choose between firstName, lastName, age, job, and friends";
+
+// if (felipe[interestedIn]) {
+//   console.log(felipe[interestedIn]);
+// } else {
+//   console.log(
+//     "Wrong request! What do you want to know about Felipe? Choose between firstName, lastName, age, job, and friends"
+//   );
+// }
+
+// felipe.location = "Brazil";
+// felipe["twiter"] = "@felipearakaki";
+// console.log(felipe);
+
+// // CHallenge
+// // Felipe has 3 friends, and his best friend is called Michael!
+
+// console.log(
+//   `${felipe.firstName} has ${felipe.friends.length} friends, and his best friend is called ${felipe.friends[0]}!`
+// );
+
+////////////////////////////////////////////////////////////////
+
 const felipe = {
   firstName: "Felipe",
   lastName: "Arakaki",
-  age: 2037 - 1988,
-  job: "student",
+  birthYear: 1988,
+  job: "unemployed",
   friends: ["Michael", "Peter", "Steven"],
+  hasDriversLicense: false,
+  calcAge: function () {
+    this.age = 2037 - this.birthYear;
+    return this.age;
+  },
+
+  getSummary: function () {
+    return `${this.firstName} ia a ${this.calcAge()}-years old ${
+      felipe.job
+    }, and he has ${this.hasDriversLicense ? "a" : "no"} driver's license.`;
+  },
 };
 
-console.log(felipe);
+console.log(felipe.calcAge());
 
-console.log(felipe.lastName);
-console.log(felipe["lastName"]);
+console.log(felipe.age);
 
-const nameKey = "Name";
-console.log(felipe["first" + nameKey]);
-console.log(felipe["last" + nameKey]);
+// Challenge
+// "Felipe is a 46-years old teacher. and he has a driver's license"
+console.log(felipe.getSummary());
 
-const interestedIn =
-  "What do you want to know about Felipe? Choose between firstName, lastName, age, job, and friends";
 
-if (felipe[interestedIn]) {
-  console.log(felipe[interestedIn]);
-} else {
-  console.log(
-    "Wrong request! What do you want to know about Felipe? Choose between firstName, lastName, age, job, and friends"
-  );
-}
-
-felipe.location = "Brazil";
-felipe["twiter"] = "@felipearakaki";
-console.log(felipe);
-
-// CHallenge
-// Felipe has 3 friends, and his best friend is called Michael!
-
-console.log(
-  `${felipe.firstName} has ${felipe.friends.length} friends, and his best friend is called ${felipe.friends[0]}!`
-);
+/////////////////////////////////////////////////////////////////////////////
