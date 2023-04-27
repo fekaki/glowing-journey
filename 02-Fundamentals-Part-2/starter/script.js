@@ -428,6 +428,58 @@ TEST DATA: Marks weights 78 kg and is 1.69 m tall. John weights 92 kg and is 1.9
 
 /////////////////////////////////////////////////////////
 
+// const felipe = [
+//   "Felipe",
+//   "Arakaki",
+//   2037 - 1988,
+//   "student",
+//   ["Michael", "Peter", "Steven"],
+//   true,
+// ];
+// const types = [];
+
+// // console.log(felipe[0])
+// // console.log(felipe[1])
+// // ...
+// // console.log(felipe[4])
+// // felipe[5] does NOT exist
+
+// for (let i = 0; i < felipe.length; i++) {
+//   // Reading from felipe array
+//   console.log(felipe[i], typeof felipe[i]);
+
+//   // Filling types array
+//   // types[i] = typeof felipe[i];
+//   types.push(typeof felipe[i]);
+// }
+
+// console.log(types);
+
+// const years = [1991, 2007, 1969, 2020];
+// const ages = [];
+
+// for (let i = 0; i < years.length; i++) {
+//   ages.push(2037 - years[i]);
+// }
+
+// console.log(ages);
+
+// // continue and break
+// console.log("--- ONLY STRINGS ---");
+// for (let i = 0; i < felipe.length; i++) {
+//   if (typeof felipe[i] !== "string") continue;
+
+//   console.log(felipe[i], typeof felipe[i]);
+// }
+
+// console.log("--- BREAK WITH NUMBER ---");
+// for (let i = 0; i < felipe.length; i++) {
+//   if (typeof felipe[i] === "number") break;
+
+//   console.log(felipe[i], typeof felipe[i]);
+// }
+
+/////////////////////////////////////////////////////
 const felipe = [
   "Felipe",
   "Arakaki",
@@ -436,45 +488,15 @@ const felipe = [
   ["Michael", "Peter", "Steven"],
   true,
 ];
-const types = [];
 
-// console.log(felipe[0])
-// console.log(felipe[1])
-// ...
-// console.log(felipe[4])
-// felipe[5] does NOT exist
-
-for (let i = 0; i < felipe.length; i++) {
-  // Reading from felipe array
-  console.log(felipe[i], typeof felipe[i]);
-
-  // Filling types array
-  // types[i] = typeof felipe[i];
-  types.push(typeof felipe[i]);
+for (let i = felipe.length - 1; i >= 0; i--) {
+  console.log(i, felipe[i]);
 }
 
-console.log(types);
+for (let exercise = 1; exercise < 4; exercise++) {
+  console.log(`------- Starting exercise ${exercise}`);
 
-const years = [1991, 2007, 1969, 2020];
-const ages = [];
-
-for (let i = 0; i < years.length; i++) {
-  ages.push(2037 - years[i]);
-}
-
-console.log(ages);
-
-// continue and break
-console.log("--- ONLY STRINGS ---");
-for (let i = 0; i < felipe.length; i++) {
-  if (typeof felipe[i] !== "string") continue;
-
-  console.log(felipe[i], typeof felipe[i]);
-}
-
-console.log("--- BREAK WITH NUMBER ---");
-for (let i = 0; i < felipe.length; i++) {
-  if (typeof felipe[i] === "number") break;
-
-  console.log(felipe[i], typeof felipe[i]);
+  for (let rep = 0; rep < 6; rep++) {
+    console.log(`Exercise ${exercise}: Lifting weight repetition ${rep} 🏋️‍♂️`);
+  }
 }
