@@ -422,6 +422,59 @@ TEST DATA: Marks weights 78 kg and is 1.69 m tall. John weights 92 kg and is 1.9
 // console.log("Lifting weights repetition 10 🏋️‍♀️");
 
 // for loop keeps running while condition is TRUE
-for (let rep = 1; rep <= 10; rep++) {
-  console.log(`Lifting weights repetition ${rep} 🏋️‍♀️`);
+// for (let rep = 1; rep <= 10; rep++) {
+//   console.log(`Lifting weights repetition ${rep} 🏋️‍♀️`);
+// }
+
+/////////////////////////////////////////////////////////
+
+const felipe = [
+  "Felipe",
+  "Arakaki",
+  2037 - 1988,
+  "student",
+  ["Michael", "Peter", "Steven"],
+  true,
+];
+const types = [];
+
+// console.log(felipe[0])
+// console.log(felipe[1])
+// ...
+// console.log(felipe[4])
+// felipe[5] does NOT exist
+
+for (let i = 0; i < felipe.length; i++) {
+  // Reading from felipe array
+  console.log(felipe[i], typeof felipe[i]);
+
+  // Filling types array
+  // types[i] = typeof felipe[i];
+  types.push(typeof felipe[i]);
+}
+
+console.log(types);
+
+const years = [1991, 2007, 1969, 2020];
+const ages = [];
+
+for (let i = 0; i < years.length; i++) {
+  ages.push(2037 - years[i]);
+}
+
+console.log(ages);
+
+// continue and break
+console.log("--- ONLY STRINGS ---");
+for (let i = 0; i < felipe.length; i++) {
+  if (typeof felipe[i] !== "string") continue;
+
+  console.log(felipe[i], typeof felipe[i]);
+}
+
+console.log("--- BREAK WITH NUMBER ---");
+for (let i = 0; i < felipe.length; i++) {
+  if (typeof felipe[i] === "number") break;
+
+  console.log(felipe[i], typeof felipe[i]);
 }
