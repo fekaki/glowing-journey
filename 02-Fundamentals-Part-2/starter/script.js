@@ -480,23 +480,43 @@ TEST DATA: Marks weights 78 kg and is 1.69 m tall. John weights 92 kg and is 1.9
 // }
 
 /////////////////////////////////////////////////////
-const felipe = [
-  "Felipe",
-  "Arakaki",
-  2037 - 1988,
-  "student",
-  ["Michael", "Peter", "Steven"],
-  true,
-];
+// const felipe = [
+//   "Felipe",
+//   "Arakaki",
+//   2037 - 1988,
+//   "student",
+//   ["Michael", "Peter", "Steven"],
+//   true,
+// ];
 
-for (let i = felipe.length - 1; i >= 0; i--) {
-  console.log(i, felipe[i]);
-}
+// for (let i = felipe.length - 1; i >= 0; i--) {
+//   console.log(i, felipe[i]);
+// }
 
-for (let exercise = 1; exercise < 4; exercise++) {
-  console.log(`------- Starting exercise ${exercise}`);
+// for (let exercise = 1; exercise < 4; exercise++) {
+//   console.log(`------- Starting exercise ${exercise}`);
 
-  for (let rep = 0; rep < 6; rep++) {
-    console.log(`Exercise ${exercise}: Lifting weight repetition ${rep} 🏋️‍♂️`);
-  }
+//   for (let rep = 0; rep < 6; rep++) {
+//     console.log(`Exercise ${exercise}: Lifting weight repetition ${rep} 🏋️‍♂️`);
+//   }
+// }
+
+///////////////////////////////////////////////
+
+// for (let rep = 1; rep <= 10; rep++) {
+//   // console.log(`Lifting weights repetition ${rep} 🏋️‍♀️`);
+// }
+
+// let rep = 1;
+// while (rep <= 10) {
+//   // console.log(`WHILE Lifting weights repetition ${rep} 🏋️‍♀️`);
+//   rep++;
+// }
+
+let dice = Math.trunc(Math.random() * 6) + 1;
+
+while (dice !== 6) {
+  console.log(`You rolled a ${dice}`);
+  dice = Math.trunc(Math.random() * 6) + 1;
+  if (dice === 6) console.log("Loop is about to end ...");
 }
